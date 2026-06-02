@@ -1,6 +1,15 @@
 # Playwright Enterprise Automation
 
+![Python](https://img.shields.io/badge/Python-3.12+-blue)
+![Playwright](https://img.shields.io/badge/Playwright-Automation-green)
+![ERP](https://img.shields.io/badge/ERP-Odoo-purple)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
 Enterprise-grade browser automation framework built with Playwright and Python for ERP invoice extraction, dynamic UI navigation, resilient synchronization, secure data processing, and structured JSON export.
+
+<p align="center">
+  <img src="./assets/architecture/playwright-enterprise-architecture.png" width="100%" alt="Playwright Enterprise Automation Architecture"/>
+</p>
 
 ---
 

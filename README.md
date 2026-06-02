@@ -13,6 +13,22 @@ Enterprise-grade browser automation framework built with Playwright and Python f
 
 ---
 
+## Automation Workflow
+
+<p align="center">
+  <img src="./assets/architecture/automation-workflow.png" width="100%" alt="Automation Workflow"/>
+</p>
+
+---
+
+## Security Architecture
+
+<p align="center">
+  <img src="./assets/architecture/security-architecture.png" width="100%" alt="Security Architecture"/>
+</p>
+
+---
+
 ## Overview
 
 This project demonstrates a production-oriented automation workflow for interacting with dynamically rendered ERP systems.
@@ -57,6 +73,57 @@ This framework simulates a real-world enterprise workflow by locating a target i
 * Headless execution support
 * Secure logging practices
 * Memory sanitization
+* Environment-based configuration
+
+---
+
+## Solution Architecture
+
+The framework is organized into independent layers to improve maintainability, reliability, and extensibility.
+
+### Browser Layer
+
+Responsible for:
+
+* Browser lifecycle management
+* Context creation
+* Session handling
+* Headless execution
+
+### Navigation Layer
+
+Responsible for:
+
+* Authentication
+* ERP navigation
+* Filter management
+* Invoice discovery
+
+### Synchronization Layer
+
+Responsible for:
+
+* Event-driven waiting
+* Dynamic UI handling
+* Network-aware synchronization
+* Retry support
+
+### Extraction Layer
+
+Responsible for:
+
+* Invoice line extraction
+* Data validation
+* JSON serialization
+
+### Security Layer
+
+Responsible for:
+
+* PHI-safe logging
+* Memory sanitization
+* Secure credential handling
+* Output isolation
 
 ---
 
@@ -93,12 +160,15 @@ Sanitize Memory
 Close Browser
 ```
 
+---
+
 ## Project Structure
 
 ```text
 playwright-enterprise-automation/
 │
 ├── assets/
+│   └── architecture/
 │
 ├── core/
 │   ├── browser.py
@@ -112,6 +182,12 @@ playwright-enterprise-automation/
 │   ├── logger.py
 │   └── sanitizer.py
 │
+├── docs/
+│   ├── architecture.md
+│   ├── workflow.md
+│   ├── security.md
+│   └── synchronization.md
+│
 ├── output/
 │
 ├── .env.example
@@ -119,6 +195,55 @@ playwright-enterprise-automation/
 ├── main.py
 └── README.md
 ```
+
+---
+
+## Installation
+
+```bash
+git clone https://github.com/<your-username>/playwright-enterprise-automation.git
+
+cd playwright-enterprise-automation
+
+pip install -r requirements.txt
+
+playwright install
+```
+
+---
+
+## Configuration
+
+Create a local `.env` file using `.env.example`.
+
+```env
+ODOO_URL=https://your-instance.odoo.com
+
+ODOO_USERNAME=admin@example.com
+
+ODOO_PASSWORD=change_me
+
+HEADLESS=true
+
+MAX_RETRIES=3
+
+EXPORT_PATH=output/invoice_lines.json
+```
+
+---
+
+## Documentation
+
+Additional project documentation is available inside the `docs/` directory.
+
+| Document           | Description                           |
+| ------------------ | ------------------------------------- |
+| architecture.md    | High-level solution architecture      |
+| workflow.md        | End-to-end automation workflow        |
+| security.md        | Security architecture and controls    |
+| synchronization.md | Event-driven synchronization strategy |
+
+---
 
 ## Expected Output
 
@@ -133,24 +258,34 @@ playwright-enterprise-automation/
 ]
 ```
 
+---
+
 ## Security Considerations
 
 * No invoice details exposed in logs
 * No customer information written to console output
 * Secure handling of extracted data
-* Temporary data cleared after export
 * Environment-based credential management
+* Output isolation
+* Memory sanitization after export
+* PHI-safe logging practices
+
+---
 
 ## Technology Stack
 
-| Component     | Technology        |
-| ------------- | ----------------- |
-| Language      | Python            |
-| Automation    | Playwright        |
-| Browser       | Chromium          |
-| Serialization | JSON              |
-| Logging       | Python Logging    |
-| Execution     | Headless Chromium |
+| Component      | Technology        |
+| -------------- | ----------------- |
+| Language       | Python            |
+| Automation     | Playwright        |
+| Browser Engine | Chromium          |
+| Configuration  | Python Dotenv     |
+| Retry Strategy | Tenacity          |
+| Serialization  | JSON              |
+| Logging        | Python Logging    |
+| Execution      | Headless Chromium |
+
+---
 
 ## Future Enhancements
 
@@ -160,6 +295,10 @@ playwright-enterprise-automation/
 * Cloud execution support
 * CI/CD integration
 * Multi-ERP compatibility
+* Advanced retry framework
+* Screenshot-based diagnostics
+
+---
 
 ## License
 

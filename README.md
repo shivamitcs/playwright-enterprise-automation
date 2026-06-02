@@ -13,22 +13,6 @@ Enterprise-grade browser automation framework built with Playwright and Python f
 
 ---
 
-## Automation Workflow
-
-<p align="center">
-  <img src="./assets/architecture/automation-workflow.png" width="100%" alt="Automation Workflow"/>
-</p>
-
----
-
-## Security Architecture
-
-<p align="center">
-  <img src="./assets/architecture/security-architecture.png" width="100%" alt="Security Architecture"/>
-</p>
-
----
-
 ## Overview
 
 This project demonstrates a production-oriented automation workflow for interacting with dynamically rendered ERP systems.
@@ -129,36 +113,17 @@ Responsible for:
 
 ## Automation Workflow
 
-```text
-Launch Browser
-        │
-        ▼
-Authenticate
-        │
-        ▼
-Open Invoicing Module
-        │
-        ▼
-Apply Posted Filter
-        │
-        ▼
-Locate Target Invoice
-        │
-        ▼
-Open Invoice Details
-        │
-        ▼
-Extract Invoice Lines
-        │
-        ▼
-Generate JSON Output
-        │
-        ▼
-Sanitize Memory
-        │
-        ▼
-Close Browser
-```
+<p align="center">
+  <img src="./assets/architecture/automation-workflow.png" width="100%" alt="Automation Workflow"/>
+</p>
+
+---
+
+## Security Architecture
+
+<p align="center">
+  <img src="./assets/architecture/security-architecture.png" width="100%" alt="Security Architecture"/>
+</p>
 
 ---
 

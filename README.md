@@ -7,13 +7,26 @@
 
 Enterprise-grade browser automation framework built with Playwright and Python for ERP invoice extraction, dynamic UI navigation, resilient synchronization, secure data processing, and structured JSON export.
 
+---
+
+## Architecture Highlights
+
+- Layered automation architecture
+- Event-driven synchronization
+- Fault-tolerant execution workflows
+- Secure data processing
+- Modular extraction components
+- ERP-focused automation design
+
+---
+
 <p align="center">
   <img src="./assets/architecture/playwright-enterprise-architecture.png" width="100%" alt="Playwright Enterprise Automation Architecture"/>
 </p>
 
 ---
 
-## Overview
+## Platform Overview
 
 This project demonstrates a production-oriented automation workflow for interacting with dynamically rendered ERP systems.
 
@@ -23,7 +36,7 @@ The framework automates invoice discovery and extraction from an Odoo ERP enviro
 * Event-driven synchronization
 * Resilient locator strategies
 * Fault-tolerant automation
-* PHI-safe logging
+* Sensitive data-safe logging
 * Secure data processing
 * Structured JSON export
 
@@ -40,6 +53,28 @@ Organizations often require automated extraction of invoice information from ERP
 * System integrations
 
 This framework simulates a real-world enterprise workflow by locating a target invoice, extracting invoice line items, and exporting the results into a structured JSON format.
+
+---
+
+## Business Outcomes
+
+- Reduced manual invoice processing effort
+- Improved ERP data accessibility
+- Faster financial reporting workflows
+- Consistent structured data exports
+- Improved automation reliability
+- Reduced operational overhead
+
+---
+
+## Key Use Cases
+
+- ERP invoice extraction
+- Financial data migration
+- Audit preparation workflows
+- Reporting automation
+- Data synchronization processes
+- Enterprise system integrations
 
 ---
 
@@ -104,7 +139,7 @@ Responsible for:
 
 Responsible for:
 
-* PHI-safe logging
+* Sensitive data-safe logging
 * Memory sanitization
 * Secure credential handling
 * Output isolation
@@ -173,6 +208,8 @@ cd playwright-enterprise-automation
 pip install -r requirements.txt
 
 playwright install
+
+python main.py
 ```
 
 ---
@@ -233,7 +270,17 @@ Additional project documentation is available inside the `docs/` directory.
 * Environment-based credential management
 * Output isolation
 * Memory sanitization after export
-* PHI-safe logging practices
+* Sensitive data-safe logging practices
+
+---
+
+## Scalability Considerations
+
+- Modular automation layers
+- Reusable extraction workflows
+- Configurable retry strategies
+- Multi-environment execution support
+- Extensible ERP integration model
 
 ---
 
@@ -262,9 +309,14 @@ Additional project documentation is available inside the `docs/` directory.
 * Multi-ERP compatibility
 * Advanced retry framework
 * Screenshot-based diagnostics
+* Containerized deployment
+* Observability and monitoring
+* Distributed execution support
 
 ---
 
 ## License
 
-This project is licensed under the MIT License.
+MIT License
+
+Copyright © 2026 SHIVAM ITCS

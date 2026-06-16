@@ -317,6 +317,6 @@ Additional project documentation is available inside the `docs/` directory.
 
 ## License
 
-MIT License
+MIT License 
 
 Copyright © 2026 SHIVAM ITCS

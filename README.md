@@ -21,7 +21,7 @@ Enterprise-grade browser automation framework built with Playwright and Python f
 ---
 
 <p align="center">
-  <img src="./assets/architecture/playwright-enterprise-architecture.png" width="100%" alt="Playwright Enterprise Automation Architecture"/>
+  <img src="./assets/architecture/playwright-enterprise-architecture.png" width="100%" alt="Playwright Enterprise Automation Architecture" />
 </p>
 
 ---

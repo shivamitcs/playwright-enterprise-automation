@@ -30,7 +30,7 @@ Enterprise-grade browser automation framework built with Playwright and Python f
 
 This project demonstrates a production-oriented automation workflow for interacting with dynamically rendered ERP systems.
 
-The framework automates invoice discovery and extraction from an Odoo ERP environment while emphasizing:
+The framework automates invoice discovery and extraction from an Odoo ERP environment while emphasizing: 
 
 * Dynamic UI handling
 * Event-driven synchronization
@@ -47,7 +47,7 @@ The framework automates invoice discovery and extraction from an Odoo ERP enviro
 Organizations often require automated extraction of invoice information from ERP systems for:
 
 * Reporting
-* Data migration
+* Data migration 
 * Financial processing
 * Auditing
 * System integrations
@@ -76,7 +76,7 @@ This framework simulates a real-world enterprise workflow by locating a target i
 - Data synchronization processes
 - Enterprise system integrations
 
----
+--- 
 
 ## Features
 
@@ -101,7 +101,7 @@ This framework simulates a real-world enterprise workflow by locating a target i
 The framework is organized into independent layers to improve maintainability, reliability, and extensibility.
 
 ### Browser Layer
-
+ 
 Responsible for:
 
 * Browser lifecycle management
@@ -131,7 +131,7 @@ Responsible for:
 
 Responsible for:
 
-* Invoice line extraction
+* Invoice line extraction 
 * Data validation
 * JSON serialization
 
